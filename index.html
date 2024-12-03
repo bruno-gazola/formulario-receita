@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="receita.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Receita</title>
+</head>
+<body>
+    <form action="enviado.html" method="post">
+
+        <h2>Inscreva sua Receita</h2>
+
+        <label class="titulo" for="nome"> Nome da Receita:</label><br>
+        <input type="text" name="nome" id="nome"
+        required="required" autofocus><br><br>
+
+        <label class="titulo">Categoria</label><br>
+        <select name="categoria" required>
+            <option value="">Selecione a Categoria...</option>
+            <option value="aperitivo">Aperitivo</option>
+            <option value="entrada">Entrada</option>
+            <option value="prato principal">Prato Principal</option>
+            <option value="sobremesa">Sobremesa</option>
+            </select><br><br>
+
+        <label class="titulo" for="ingredientes"> Ingredientes:</label><br>
+        <input type="text" name="ingredientes" id="ingredientes" required><br><br>
+        
+        <label class="titulo" for="modo"> Modo de Preparo:</label><br>
+        <input type="text" name="modo" id="modo" required><br><br>
+        
+        <label class="titulo" for="tempo" class="tempo"> Tempo de Preparo:</label><br>
+        <input type="time" name="tempo" id="tempo" class="tempo" required step="0.1"><br><br>
+
+        <label class="titulo"> Dificuldade:</label><br>
+        <input class="emlinha" type="radio" name="dificuldade" id="facil">
+        <label class="emlinha" for="facil">Fácil</label>
+        <input class="emlinha" type="radio" name="dificuldade" id="moderado">
+        <label class="emlinha"for="moderado">Moderado</label>
+        <input class="emlinha"type="radio" name="dificuldade" id="dificil">
+        <label class="emlinha" for="dificil">Difícil</label>
+        <br><br>
+
+        <label class="titulo" for="foto"> Foto:</label>
+        <input type="file" name="foto" id="foto" required><br><br>
+
+        <label class="titulo" for="seu nome"> Seu nome:</label><br>
+        <input type="text" name="seu nome" id="seu nome" required autofocus><br><br>
+
+        <label class="titulo" for="email"> E-mail de Contato:</label><br>
+        <input type="text" name="email" id="email" required autofocus><br><br>
+
+            
+            <label>Informações adicionais</label><br>
+            <textarea name="Informações" rows="8" cols="25" maxlength="100" 
+            required placeholder="Escreva Informações adicionais que julgar importante"></textarea>
+            <br><br>
+            <input type="submit" name="enviar" value="Enviar" id="enviar">
+
+            <p>
+                <input type="submit" value="Enviar (Simulação)" id="enviar">
+            </p>
+
+        </select>
+
+
+
+    </form>
+    
+</body>
+</html>
